@@ -39,5 +39,5 @@ for ($i = 0; $i -lt $ruleGuids.Count; $i++) {
     $actionName = $actionLabels[$action]
 
     $name = if ($asrRuleNames.ContainsKey($guid)) { $asrRuleNames[$guid] } else { "Unknown rule" }
-    Write-Host "$name`n  GUID: $guid`n  Action: $actionName`n"
+    Write-Host "$name`n  GUID: $guid`n  Action: $action`n"
 }
